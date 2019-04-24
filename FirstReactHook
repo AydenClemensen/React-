@@ -1,0 +1,11 @@
+// React and Javascript
+function Button() {
+  const [counter, setCounter] = useState(0);
+  return <button onClick={() => setCounter(counter+1)}>{counter}</button>;
+}
+
+/*DOM Render. Takes two arguments 1. Render, 2. document.getElementById (entry point) */
+ReactDOM.render(
+  <Button />,
+  document.getElementById('mountNode'),
+);
